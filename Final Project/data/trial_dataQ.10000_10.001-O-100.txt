@@ -1,0 +1,90 @@
+----------------------------------------
+Degree = 2
+----------------------------------------
+largest error of all trials = 2.18278728426e-11
+average error of all trials = 1.04452687852e-11
+
+----------------------------------------
+Degree = 3
+----------------------------------------
+largest error of all trials = 4.56200221524e-11
+average error of all trials = 2.83590951174e-11
+
+----------------------------------------
+Degree = 4
+----------------------------------------
+largest error of all trials = 4.39530664324e-10
+average error of all trials = 2.13231928348e-10
+
+----------------------------------------
+Degree = 5
+----------------------------------------
+largest error of all trials = 2.29015768434e-09
+average error of all trials = 8.24603130556e-10
+
+----------------------------------------
+Degree = 6
+----------------------------------------
+largest error of all trials = 9947.57101765
+average error of all trials = 1995.27915096
+
+----------------------------------------
+Degree = 7
+----------------------------------------
+largest error of all trials = 2993090.83953
+average error of all trials = 675574.317396
+
+----------------------------------------
+Degree = 8
+----------------------------------------
+largest error of all trials = 1933006234.38
+average error of all trials = 698148649.624
+
+----------------------------------------
+Degree = 9
+----------------------------------------
+largest error of all trials = 558391847590.0
+average error of all trials = 211818594284.0
+
+----------------------------------------
+Degree = 10
+----------------------------------------
+largest error of all trials = 3.847394725e+13
+average error of all trials = 1.13653400359e+13
+
+----------------------------------------
+Degree = 11
+----------------------------------------
+largest error of all trials = 6.93249646709e+15
+average error of all trials = 2.53528177983e+15
+
+----------------------------------------
+Degree = 12
+----------------------------------------
+largest error of all trials = 3.1602909203e+20
+average error of all trials = 6.41002244597e+19
+
+----------------------------------------
+Degree = 13
+----------------------------------------
+largest error of all trials = 1.07984741411e+19
+average error of all trials = nan
+
+----------------------------------------
+Degree = 14
+----------------------------------------
+largest error of all trials = 0
+average error of all trials = nan
+
+----------------------------------------
+Degree = 15
+----------------------------------------
+largest error of all trials = 0
+average error of all trials = nan
+
+----------------------------------------
+Degree = 16
+----------------------------------------
+largest error of all trials = 0
+average error of all trials = nan
+

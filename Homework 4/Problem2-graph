@@ -1,0 +1,25 @@
+from __future__ import division
+from __future__ import print_function
+from pylab import *
+
+
+def f(n, x):
+    return cos(n * sin(x/2)*pi)
+
+t2 = np.arange(0.0, 2*pi, 0.02)
+
+
+for i in range(5):
+    plot(t2, f(2 ** i, t2))
+
+print("Plotting  the graph...")
+
+figure(1)
+
+legend(["$n=2$", "$n=4$", "$n=8$", "$n=16$"],
+           loc="lower left")
+
+xlabel("$x$", fontsize=20)
+ylabel("$y$", fontsize=20)
+
+plt.show()

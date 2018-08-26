@@ -1,0 +1,55 @@
+Hello peers and Professor, today I would like to inform you about the algorithm that I have been working to implement. In paper publish in 2016, Francesco Calogero provides an algorithm to compute the zeros of a generic polynomial with coefficients and variables in C. 
+
+But before we continue I would like it to take it one step at a time. First off, we define what a polynomial is. Now, we know that for a generic polynomial we can write it in one of two ways. Either as coefficients multiplying each of the variables raised to powers, or in the factored form, where the polynomial is written as a product of zeros. The second form, when equated to zero, allows us to find the zeros of the polynomial easily by using the cancellation law. However, when we are given polynomials in the form above, it is not trivial to find these zeros.
+
+We know very well that in the case of polynomials of degree two the zeros of the polynomial are given by the well known quadratic equation.
+
+In the case of polynomials of degree 3, we have that the zeros can be written the the form given by the expression here.
+
+In case of polynomials of degree 4, there also exists a general solution, however, it is way too long to be fit here.
+
+However, the Abel Ruffini theorem, proved in 1824, says that for polynomials of degree 5 and above there is no algebraic solution. Thus there is no absolute way to find these values, and thus we must rely on numerical methods.
+
+Now, again, we consider the polynomial P_N of degree N to be either the sum of coefficient time the variable of the polynomial, or as the product of its roots. What we do now, however, is we don't consider the roots and coefficients of the polynomial to be stagnant object, but instead we think of them as changing with respect to variable t which we will call time. This make our polynomial of the following form. We have that y_n(t) is are our zeros and gamma_m of t are our coefficients.
+
+
+
+...
+
+
+This is where we define our algorithm. First we generate our guesses for the starting values of the zeros. We then compute all the coefficients at time zero. Finally we use an integrator to solve the system given by the F(t) here. Integrating this, we should theoretically obtain the value of the polynomial. However, numerically this is not always the case. However, after the integration is done, we should have a vector of points that are closer to the zeros than our initial guess. Thus we can then iterate this algorithm to get a better approximation.
+
+This leads to our first example. Examine this polynomial here. First we generate roots. In this case we generate roots in the square of 200 width on the origin of the affine plane. These generated zeros are given in collumn 1 of the table and are represented as xs on the graph above. We then perform runge kutta of 4 th order with these points. Above, the line going out from each x represents this path. The triangles represent the actual roots. After our first iteration we find that our time zeros are correct to about 1 decimal place.
+
+We then perform a second iteration, and we see in the graph that the points barely move. By the end of this iteration we see that our points have found, to the computer, seemingly exact solutions. Notice here that we do have an imaginary part, but it is 10^-16., implying that is is virtually 0.
+
+Here is another example. Take the following fourth order monic polynomial. Assume that the algorithm received this polynomial in expanded form. Again we generate coefficients, this time in the square of 20000 width around the origin of the affine plane. Again we see the progression, and we see that after 1 iteration we have correct solutions to about 3 decimal places. We then perform a second iteration and we find that most of our solutions are practically within machine precision.
+
+Finally consider the following polynomial. Again think as if the algorithm received this polynomial in expanded form. We generate the initial zeros exactly the same way as last time. We see that, even with multiple zeros, the algorithm starts moving towards them.
+
+Now we look at the next iteration. The convergence continues. Let us skip 10 iterations ahead. We have the following picture accompanied with the following results. We must notice that some of the results have errors in the ones place already. Thus we see that 10 steps might not be enough for a good estimate, or a bigger timestep is needed.
+
+This leads us into the 3 factors that we can alter in this algorithm. First off, we have the time-step, this is the h value used in the integrator. Then we have then number of times we reiterate the algorithm. And finally we have the initial zero guesses.
+
+To examine these three, I wrote a program that would generate random polynomials with known zeros, apply the algorithm on them, and then check the error. Using this I made some observations about how these three quantities affect the algorithm.
+
+First let us look at the time step.
+
+Here is a graph of the error when applying one iteration with the timestep 0.01 and the timestep 0.001. We see that in this case, the lower h yields a better approximation. 
+
+Now let us change our iteration number to three and we see that the effect that the timestep has is not really visible until after polynomials of degree 6
+
+However, if we increase our iteration number to 10, the difference between 0.01 and 0.001 is not felt anymore. So this implies that the timestep, at least when working with zeros of size up to a 1000 in the real and imaginary dimensions, the timestep does not provide much if the iteration amount is high enough. 
+
+However, the h value has to be somewhat small, as if we choose 0.1 = h for example we get error of the order of a hundred already at degree 3.
+
+We now look a the iteration number. In the following graph we have the average error of the roots found with respect to the degree. The lines correspond to the number of iterations. We see that until around 5 iterations, the roots of polynomials of degree of 5 and above are horrendous. However, once we reach 5 iterations, 5 and 10 do not seem to differ by much.
+
+Indeed if we make the same type of graph we see that adding more iterations past that does not help with a better approximation. 
+
+So why does this happen?
+
+Well I think the answer lies in the way our integrated vector is defined. We have here a divisor term which takes the product of every possible difference and the product that another big set of differences. The larger the order of the polynomial, the more likely we are to have terms that are very small added to terms that are very big. This leads to roundoff errors and thus our that increases with the order of the polynomial. 
+
+
+

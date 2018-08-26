@@ -1,0 +1,120 @@
+----------------------------------------
+Degree = 2
+----------------------------------------
+largest error of all trials = 1.73465588428e-13
+average error of all trials = 7.37134892599e-14
+
+----------------------------------------
+Degree = 3
+----------------------------------------
+largest error of all trials = 2.89182505284e-12
+average error of all trials = 2.7006404038e-13
+
+----------------------------------------
+Degree = 4
+----------------------------------------
+largest error of all trials = 6.19417336462e-12
+average error of all trials = 1.41681123336e-12
+
+----------------------------------------
+Degree = 5
+----------------------------------------
+largest error of all trials = 1.01961717235e-10
+average error of all trials = 1.51469138237e-11
+
+----------------------------------------
+Degree = 6
+----------------------------------------
+largest error of all trials = 4.09826177101e-10
+average error of all trials = 6.21024899441e-11
+
+----------------------------------------
+Degree = 7
+----------------------------------------
+largest error of all trials = 4.34004080142e-09
+average error of all trials = 3.76770440715e-10
+
+----------------------------------------
+Degree = 8
+----------------------------------------
+largest error of all trials = 2.04839808037e-08
+average error of all trials = 3.72284728093e-09
+
+----------------------------------------
+Degree = 9
+----------------------------------------
+largest error of all trials = 3.5814883934e-07
+average error of all trials = 2.16285727175e-08
+
+----------------------------------------
+Degree = 10
+----------------------------------------
+largest error of all trials = 2.42907495991e-06
+average error of all trials = 1.59710915498e-07
+
+----------------------------------------
+Degree = 11
+----------------------------------------
+largest error of all trials = 4.38209133475e-07
+average error of all trials = 1.12421749533e-07
+
+----------------------------------------
+Degree = 12
+----------------------------------------
+largest error of all trials = 2.2556375726e-05
+average error of all trials = 2.79846208849e-06
+
+----------------------------------------
+Degree = 13
+----------------------------------------
+largest error of all trials = 0.000409735369033
+average error of all trials = 4.79476202327e-05
+
+----------------------------------------
+Degree = 14
+----------------------------------------
+largest error of all trials = 0.000536649489886
+average error of all trials = 6.42421203752e-05
+
+----------------------------------------
+Degree = 15
+----------------------------------------
+largest error of all trials = 0.00132114585014
+average error of all trials = 0.000295204971973
+
+----------------------------------------
+Degree = 16
+----------------------------------------
+largest error of all trials = 0.0401444465037
+average error of all trials = 0.00525961034396
+
+----------------------------------------
+Degree = 17
+----------------------------------------
+largest error of all trials = 0.0718176601563
+average error of all trials = 0.0129333845635
+
+----------------------------------------
+Degree = 18
+----------------------------------------
+largest error of all trials = 6.92474614193
+average error of all trials = 0.447156500582
+
+----------------------------------------
+Degree = 19
+----------------------------------------
+largest error of all trials = 68.3792189583
+average error of all trials = 12.4977948136
+
+----------------------------------------
+Degree = 20
+----------------------------------------
+largest error of all trials = 63.6070383535
+average error of all trials = 17.8991840179
+
+----------------------------------------
+Degree = 21
+----------------------------------------
+largest error of all trials = 85.4986178204
+average error of all trials = 38.9214882096
+

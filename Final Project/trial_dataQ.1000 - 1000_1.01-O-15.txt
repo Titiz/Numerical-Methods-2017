@@ -1,0 +1,36 @@
+----------------------------------------
+Degree = 2
+----------------------------------------
+largest error of all trials = 0.0314702994561
+average error of all trials = 0.00447138951545
+
+----------------------------------------
+Degree = 3
+----------------------------------------
+largest error of all trials = 368.01059514
+average error of all trials = 74.819820431
+
+----------------------------------------
+Degree = 4
+----------------------------------------
+largest error of all trials = 659.724621127
+average error of all trials = 196.934132432
+
+----------------------------------------
+Degree = 5
+----------------------------------------
+largest error of all trials = 1150.03818923
+average error of all trials = 224.405228299
+
+----------------------------------------
+Degree = 6
+----------------------------------------
+largest error of all trials = 3491.57938917
+average error of all trials = 695.141745934
+
+----------------------------------------
+Degree = 7
+----------------------------------------
+largest error of all trials = 6148.18162365
+average error of all trials = 2112.8291424
+
